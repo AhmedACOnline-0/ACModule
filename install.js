@@ -1,3 +1,6 @@
+// JS knows Shell? I don't know how!
+#!/usr/bin/env node
+
 // Function to handle the custom installer animation
 function startInstallation() {
     console.log("⚠️  WARNING: FLASHING LIGHTS / INTENSE FLICKER");
