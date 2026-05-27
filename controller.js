@@ -9,7 +9,7 @@ const moduleName = process.argv[3];
 if (command === "install" && moduleName === "*ComputerManage") {
     
     // --- 1. FLASHING LIGHTS WARNING ---
-    console.log("⚠️  WARNING: FLASHING LIGHTS / INTENSE FLICKER");
+    console.log("WARNING: FLASHING LIGHTS / INTENSE FLICKER");
     console.log("The following installation uses a high-speed terminal animation (1ms refresh rate).");
     console.log("If you are sensitive to flashing lights, please close this terminal now (Ctrl + C).\n");
     console.log("Starting installation in 3 seconds...");
@@ -18,7 +18,7 @@ if (command === "install" && moduleName === "*ComputerManage") {
         const frames = ["\\", "&", "/", ".", "\\"];
         let index = 0;
 
-        console.log(`\n📥 Installing acmodule: ${moduleName}...\n`);
+        console.log(`\nInstalling acmodule: ${moduleName}...\n`);
 
         // --- 2. THE 1MS INFINITE LOADING LOOP ---
         const loadingLoop = setInterval(() => {
@@ -27,8 +27,7 @@ if (command === "install" && moduleName === "*ComputerManage") {
         }, 1);
 
         // --- 3. THE LIVE WEB DOWNLOAD (PULLING THE PURE .JS FILE) ---
-        // Replace this link with your actual GitHub Raw link when you upload it!
-        const rawUrl = "https://raw.githubusercontent.com/AhmedAC/ComputerManage/main/ComputerManage.js";
+        const rawUrl = "https://raw.githubusercontent.com/AhmedACOnline-0/ACModule/main/ComputerManage.js";
         
         const fileStream = fs.createWriteStream('./ComputerManage.js');
 
@@ -36,7 +35,7 @@ if (command === "install" && moduleName === "*ComputerManage") {
             // Check if the link actually worked (Status Code 200 means success)
             if (response.statusCode !== 200) {
                 clearInterval(loadingLoop);
-                console.log(`\n🔴 Download Failed! Server responded with status: ${response.statusCode}`);
+                console.log(`\nDownload Failed! Server responded with status: ${response.statusCode}`);
                 return;
             }
 
@@ -54,7 +53,7 @@ if (command === "install" && moduleName === "*ComputerManage") {
                 console.log("// ////////////////////////////////////////////////////////////////////////////////// //");
                 console.log("Welcome to ComputerManage by AC/AhmedAC                                               //");
                 console.log("// ////////////////////////////////////////////////////////////////////////////////// //\n");
-                console.log(`🟢 Success! ${moduleName}.js has been cleanly downloaded into your project folder.`);
+                console.log(`Success! ${moduleName}.js has been cleanly downloaded into your project folder.`);
             });
             
         }).on('error', (err) => {
