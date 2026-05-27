@@ -5,6 +5,6 @@
   "main": "app.js",
   "type": "commonjs",
   "bin": {
-    "acmodule": "./install.js"
+    "acmodule": "./controller.js"
   }
 }
