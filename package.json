@@ -1,0 +1,10 @@
+{
+  "name": "acmodule",
+  "version": "1.0.0",
+  "description": "AC Module Installer",
+  "main": "app.js",
+  "type": "commonjs",
+  "bin": {
+    "acmodule": "./install.js"
+  }
+}
